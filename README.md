@@ -40,15 +40,36 @@ Download Link: [Link](https://github.com/qhjqhj00/WebBrain-Data/)
 
 Baidu Disk: [Link](https://github.com/qhjqhj00/WebBrain-Data/)
 
+
 ### WebBrain-G(eneration)
-This is a processed dataset for training and evaluating generation model.
+
+This is a processed dataset for training and evaluating generation model. 
+
+WebBrain-G contains train / dev / test files, which are in the following format:
+
+```
+[title] wiki_title [ref] [ref_id] ref_title ref_content [SPLIT] ... [SPLIT] target_text 
+```
+where we append the Wiki title to the front of each reference, merge all references and the target text (label) with a special token [SPLIT].
 
 Download Link: [Link](https://github.com/qhjqhj00/WebBrain-Data/)
 
 Baidu Disk: [Link](https://github.com/qhjqhj00/WebBrain-Data/)
 
 ### WebBrain-R(etrieval)
+
 This is a processed dataset for training and evaluating retrieval model.
+
+WebBrain-R contains four files: train.tsv / dev.tsv / test.tsv and corpus.jsonl. 
+The first three files are in the same format:
+```
+qid\tquery\tpositive_passage_id\tnegative_passage1_id\t...\n
+```
+And data in corpus.jsonl are in the fowllowing format:
+```
+{"id": "passage_id", "content": "passage_content"}
+```
+
 
 Download Link: [Link](https://github.com/qhjqhj00/WebBrain-Data/)
 
@@ -67,6 +88,8 @@ The statistic information of WebBrain-R and WebBrain-G is as follow:
 | \# Training           | 4.46M      | 12.30M     |
 | \# Validation         | 0.2M       | 0.5M       |
 | \# Test               | 88,935     | 24,546     |
+
+In the paper, we evaluate a proposed model, ReGen on the WebBrain dataset. We release the source codes of ReGen in this Repo: [Link](https://github.com/qhjqhj00/WebBrain).
 
 # Terms of Use
 
