@@ -47,7 +47,7 @@ We understand that the size of these datasets (Terabytes) can make downloading c
 | WebBrain-Raw | Contains the raw text of WebBrain. It comprises 153 zipped data chunks in which each line is a Wikepedia page with its reference articles. | On the way | [Link](https://pan.baidu.com/s/1P-292IHuV9XMujIzPp82vw) |
 | WebBrain-deduplicated | In WebBrain-Raw, multiple Wikipedia pages might use an identical web page as a reference, leading to redundancy. In this dataset, we deduplicate all reference articles and generate a standalone reference database. We only keep the reference's URL in the Wikipedia page data. | On the way | On the way |
 | WebBrain-G(eneration) | This is a processed dataset for training and evaluating generation model. | On the way | On the way |
-| WebBrain-R(etrieval) | This is a processed dataset for training and evaluating retrieval model. | On the way | On the way |
+| WebBrain-R(etrieval) | This is a processed dataset for training and evaluating retrieval model. | On the way | [Link](https://pan.baidu.com/s/1xGq2VwxatppbCpRMvD07Eg) |
 
 ### Data format:
 WebBrain-Raw contains 154 chunk files, which are in jsonline format.
