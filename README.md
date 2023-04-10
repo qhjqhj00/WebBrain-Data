@@ -49,9 +49,50 @@ We understand that the size of these datasets (Terabytes) can make downloading c
 | WebBrain-G(eneration) | This is a processed dataset for training and evaluating generation model. | On the way | On the way |
 | WebBrain-R(etrieval) | This is a processed dataset for training and evaluating retrieval model. | On the way | On the way |
 
+### Data format:
+WebBrain-Raw contains 154 chunk files, which are in jsonline format.
+Each line of data in WebBrain-Raw is in the following format:
+```
+{
+   "url":"wiki_url",
+   "title": "wiki_title"
+   "text":"sentence_a <a href=\"wiki_hyperlink\">wiki_entry</a> sentence_b[1].
+           <h2> section_title </h2> sentence_c.[2]"
+   "text":"wiki_content",
+   "references":[
+      {
+         "cite_id":"[1]",
+         "title":"ref_title",
+         "url":"ref_url",
+         "text": "ref_content"
+      },
+      ...
+   ]
+}
+```
+For the Wiki pages, we keep necessary html tags to identify the Wiki section and the Wiki entry. The Wiki entry refers to the internal links to other Wiki page. 
+
+WebBrain-R contains four files: train.tsv / dev.tsv / test.tsv and corpus.jsonl. 
+The first three files are in the same format:
+```
+qid\tquery\tpositive_passage_id\tnegative_passage1_id\t...\n
+```
+And data in corpus.jsonl are in the fowllowing format:
+```
+{"id": "passage_id", "content": "passage_content"}
+```
+
+WebBrain-G contains train / dev / test files, which are in the following format:
+
+```
+[title] wiki_title [ref] [ref_id] ref_title ref_content [SPLIT] ... [SPLIT] target_text 
+```
+where we append the Wiki title to the front of each reference, merge all references and the target text (label) with a special token [SPLIT].
+
 
 The statistic information is as follow:
 
+### Statistics
 #### Statistics of data for WebBrain-Raw.
 | Dataset     | \# Wiki Pages | \# Refs   | Status        | Storage Size |
 | ----------- | ------------- | ---------| ------------ | ------------ |
@@ -72,6 +113,8 @@ The statistic information is as follow:
 | \# Training           | 4.46M      | 12.30M     |
 | \# Validation         | 0.2M       | 0.5M       |
 | \# Test               | 88,935     | 24,546     |
+
+In the paper, we evaluate a proposed model, ReGen on the WebBrain dataset. We release the source codes of ReGen in this Repo: [Link](https://github.com/qhjqhj00/WebBrain).
 
 # Terms of Use
 
