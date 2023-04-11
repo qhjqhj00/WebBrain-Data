@@ -12,9 +12,9 @@ If you use the dataset in any publication or presentation, please cite:
 ```
 @misc{qian2023webbrain,
       title={WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus}, 
-      author={Hongjing Qian, Yutao Zhu, Zhicheng Dou, Haoqi Gu, Xinyu Zhang, Zheng Liu, Ruofei Lai, Zhao Cao, Jian-Yun Nie and Ji-Rong Wen},
+      author={Hongjing Qian and Yutao Zhu and Zhicheng Dou and Haoqi Gu and Xinyu Zhang and Zheng Liu and Ruofei Lai and Zhao Cao and Jian-Yun Nie and Ji-Rong Wen},
       year={2023},
-      eprint={2304.10624},
+      eprint={2304.04358},
       archivePrefix={arXiv},
       primaryClass={cs.CL}
 }
