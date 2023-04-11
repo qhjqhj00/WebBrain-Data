@@ -40,6 +40,7 @@ The second option is to access the datasets via Baidu Cloud Disk, which is readi
 
 We understand that the size of these datasets (Terabytes) can make downloading challenging, so we are actively exploring additional options for hosting the data. We are committed to finding free and accessible alternatives and welcome any suggestions you may have.
 
+You may download the sample data here: [Google Drive](https://drive.google.com/file/d/1WHu67PRSejw1NVkK4OLBtzGDfiXYZEYL/view?usp=sharing), [Baidu Cloud Disk](https://pan.baidu.com/s/1qBMb9QExAFn1YRqCZEZ5Tw?pwd=rdv9). 
 
 **We provide the following datasets:**
 | Dataset | Description | Download Link | Baidu Cloud Disk |
