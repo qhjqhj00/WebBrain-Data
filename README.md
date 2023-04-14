@@ -24,9 +24,11 @@ If you use the dataset in any publication or presentation, please cite:
 
 ### Application form
 
-To download the datasets, please complete and sign the application form and submit it to us. Upon receipt of the application form, we will provide you with a download password.
+To download the datasets, please complete and sign the application form and submit it to us. Upon receipt of the application form, we will provide you with a download password. 
 
-[Application Form](https://github.com/qhjqhj00/WebBrain-Data/blob/main/application_form.md)
+**You are required to sign manually.**
+[Application Form (pdf)](https://github.com/qhjqhj00/WebBrain-Data/blob/main/Application_Form.pdf)
+[Application Form (markdown)](https://github.com/qhjqhj00/WebBrain-Data/blob/main/application_form.md)
 
 The form is provided as markdown format which is easy to edit. When you finish the form, please save as pdf to send back.
 
